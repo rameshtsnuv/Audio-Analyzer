@@ -9,7 +9,7 @@ A Python-based GUI application to visualize WAV audio files, view waveforms, ana
 - Select a time range interactively using the mouse.
 - Zoom in/out on waveform via menu options.
 - Control options via menus:
-  - **FFT Size:** 256, 512, 1024, 2048, 4096, 8192, 16384 (default: 4096)
+  - **FFT Size:** 256, 512, 1024, 2048, 4096, 8192, 16384 (default: 512)
   - **Octave Smoothing:** Off, 1/2, 1/3, 1/4, 1/6 (default: Off)
   - **Frequency Scale:** Linear, Logarithmic (default: Linear)
 - Reset view to full waveform.
@@ -20,8 +20,8 @@ A Python-based GUI application to visualize WAV audio files, view waveforms, ana
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
-cd wav-audio-analyzer
+git clone https://github.com/rameshtsnuv/Audio-Analyzer.git
+cd Audio-Analyzer
 ```
 
 2. Install dependencies:
@@ -43,7 +43,7 @@ Dependencies include:
 Run the application with:
 
 ```bash
-python audio_analyzer.py
+python audioanalyzer.py
 ```
 
 - Open a WAV file using `File -> Open WAV`.
@@ -60,12 +60,11 @@ wav-audio-analyzer/
 ├── README.md                  # This README file
 ├── requirements.txt           # Dependency list
 ├── screenshot.png             # GUI screenshot placeholder
-└── .gitignore                 # Ignore common Python files/folders
+
 ```
 
 ## Screenshot
-
-
+![Audio Analyzer Screenshot](screenshot.png)
 
 ## Notes
 
