@@ -10,7 +10,7 @@ from scipy.fft import rfft, rfftfreq
 class AudioAnalyzer(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("WAV Analyzer")
+        self.setWindowTitle("Audio Analyzer")
         self.resize(1400, 900)
 
         # State
@@ -18,7 +18,7 @@ class AudioAnalyzer(QtWidgets.QMainWindow):
         self.sample_rate = None
         self.duration = None
         self.last_selection = None
-        self.fft_size = 4096
+        self.fft_size = 512
         self.freq_scale = "Linear"
         self.octave_smoothing_fraction = 3
 
@@ -43,7 +43,7 @@ class AudioAnalyzer(QtWidgets.QMainWindow):
         # Menu
         menu = self.menuBar()
         file_menu = menu.addMenu("File")
-        open_action = QtWidgets.QAction("Open WAV", self)
+        open_action = QtWidgets.QAction("Open File", self)
         open_action.triggered.connect(self.load_wav)
         file_menu.addAction(open_action)
 
